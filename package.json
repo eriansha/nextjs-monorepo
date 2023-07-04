@@ -4,6 +4,8 @@
   "description": "Experimenting repo to create Monorepo for NextJS projects",
   "main": "index.js",
   "scripts": {
+    "dev:internal-dashboard": "npm run dev -w internal-dashboard",
+    "dev:customer-web": "npm run dev -w customer-web",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint-packages": "npm run lint -ws --if-present"
   },
