@@ -17,7 +17,7 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Customer Web!</a>
         </h1>
 
-        <UIExample text="via @shared using resolver" />
+        <UIExample />
 
         <Button color='primary'>
           Shared Button

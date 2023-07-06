@@ -17,7 +17,7 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Internal Dashboard!</a>
         </h1>
 
-        <UIExample text="via @shared using resolver" />
+        <UIExample />
       </main>
     </div>
   )
