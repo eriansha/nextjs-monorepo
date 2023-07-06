@@ -1,9 +1,9 @@
 import * as React from "react"
 
-function SharedComponentText() {
+function TestComponent() {
   return(
     <p>This is shared component text</p>
   )
 }
 
-export default SharedComponentText
+export default TestComponent
