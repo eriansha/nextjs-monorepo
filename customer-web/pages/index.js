@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { UIExample } from '@shared/ui-component'
 
 export default function Home() {
   return (
@@ -12,9 +13,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Customer Web!</a>
         </h1>
+
+        <UIExample text="via @shared using resolver" />
 
         <p className={styles.description}>
           Get started by editing{' '}
