@@ -2,9 +2,10 @@
   "name": "@shared/ui-component",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/ui.bundle.min.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.prod.js",
+    "build-watch": "webpack --config webpack.prod.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +14,15 @@
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.7",
+    "@babel/preset-env": "^7.22.7",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.22.5"
   }
 }
