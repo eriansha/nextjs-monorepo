@@ -1,17 +1,5 @@
-// import TestComponent from './components/test-component';
+import UIExample from './components/ui-example';
 
-// export {
-//   TestComponent
-// }
-
-import React from "react";
-
-const UIExample = ({ text = "" }) => {
-  return (
-    <div>
-      <h1>Shared UI library {text}</h1>
-    </div>
-  );
-};
-
-export default UIExample;
+export {
+  UIExample
+}

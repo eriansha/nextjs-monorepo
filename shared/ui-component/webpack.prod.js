@@ -7,11 +7,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         loader: "babel-loader",
       },
     ],
+  },
+  resolve: {
+    extensions: [".js", ".jsx", ".ts", ".tsx"]
   },
   output: {
     globalObject: 'this',
