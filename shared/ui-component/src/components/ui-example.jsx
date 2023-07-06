@@ -1,9 +1,9 @@
 import React from "react";
 
-const UIExample = ({ text = "" }) => {
+const UIExample = () => {
   return (
     <div>
-      <h1>Shared UI library {text}</h1>
+      <p>This text is imported from <strong>@shared/ui-component</strong></p>
     </div>
   );
 };
