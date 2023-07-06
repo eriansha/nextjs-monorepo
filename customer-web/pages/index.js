@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { UIExample } from '@shared/ui-component'
+import { UIExample, Button } from '@shared/ui-component'
 
 export default function Home() {
   return (
@@ -18,6 +18,10 @@ export default function Home() {
         </h1>
 
         <UIExample text="via @shared using resolver" />
+
+        <Button color='primary'>
+          Shared Button
+        </Button>
       </main>
     </div>
   )
