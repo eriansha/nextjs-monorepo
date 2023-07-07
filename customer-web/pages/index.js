@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { UIExample, Button } from '@shared/ui-component'
+import { Button, MyBadge, Badge } from '@shared/ui-component'
 
 export default function Home() {
   return (
@@ -13,14 +13,20 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <h1 className={styles.title}>
+        <div className='w-100'>
+          <div className='d-flex justify-content-end'>
+            <MyBadge>
+              Custom badge
+            </MyBadge>
+          </div>
+        </div>
+
+        <h1 className='my-4'>
           Welcome to <a href="https://nextjs.org">Customer Web!</a>
         </h1>
 
-        <UIExample />
-
         <Button color='primary'>
-          Shared Button
+          Click this shared button
         </Button>
       </main>
     </div>

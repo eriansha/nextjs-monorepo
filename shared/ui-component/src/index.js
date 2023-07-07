@@ -1,9 +1,15 @@
-import UIExample from './components/ui-example';
-import { Button } from 'reactstrap';
-
-import 'bootstrap/dist/css/bootstrap.css';
-
+// Built-in reactstrap component
 export {
-  UIExample,
+  Alert,
+  Badge,
   Button
-}
+} from "reactstrap"
+
+// Custom components
+export {
+  MyBadge,
+  UIExample
+} from "./components"
+
+// import bootstrap styling
+import "./styles/main.css"

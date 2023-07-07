@@ -1,2 +1,6 @@
 # build
 dist/
+
+# css style
+src/styles/main.css
+src/styles/main.css.map
