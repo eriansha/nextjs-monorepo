@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { UIExample, Button } from '@shared/ui-component'
+import { Button, MyBadge, Badge } from '@shared/ui-component'
 
 export default function Home() {
   return (
@@ -17,7 +17,9 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Customer Web!</a>
         </h1>
 
-        <UIExample />
+        <MyBadge>
+          Custom badge
+        </MyBadge>
 
         <Button color='primary'>
           Shared Button
