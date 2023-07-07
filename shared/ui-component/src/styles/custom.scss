@@ -1,0 +1,21 @@
+// Overwrite default Bootstrap variable. e.g changing primary color
+$primary: #d63384;
+
+// To adding custom theme colors, you could do this
+// 1. import func & variables
+@import "../../../../node_modules/bootstrap/scss/_functions";
+@import "../../../../node_modules/bootstrap/scss/_variables";
+
+// 2. add new mapping
+$custom-theme-colors: (
+	"altlight": #f2ebfa,
+	"altdark": #522192,
+);
+
+// 3. merge default theme and custom theme
+// by merging custom theme instead of overwrite the theme,
+// we don't break any bootstrap classess
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// 4. import bootstrap
+@import "../../../../node_modules/bootstrap/scss/bootstrap";

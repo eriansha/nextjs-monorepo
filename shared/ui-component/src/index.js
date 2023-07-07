@@ -12,4 +12,4 @@ export {
 } from "./components"
 
 // import bootstrap styling
-import 'bootstrap/dist/css/bootstrap.css';
+import "./styles.css"
