@@ -13,16 +13,20 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <h1 className={styles.title}>
+        <div className='w-100'>
+          <div className='d-flex justify-content-end'>
+            <MyBadge>
+              Custom badge
+            </MyBadge>
+          </div>
+        </div>
+
+        <h1 className='my-4'>
           Welcome to <a href="https://nextjs.org">Customer Web!</a>
         </h1>
 
-        <MyBadge>
-          Custom badge
-        </MyBadge>
-
         <Button color='primary'>
-          Shared Button
+          Click this shared button
         </Button>
       </main>
     </div>
