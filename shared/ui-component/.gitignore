@@ -2,5 +2,5 @@
 dist/
 
 # css style
-src/styles.css
-src/styles.css.map
+src/styles/main.css
+src/styles/main.css.map
