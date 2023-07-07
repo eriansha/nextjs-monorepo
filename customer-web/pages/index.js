@@ -1,8 +1,20 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 import { UIExample } from '@shared/ui-component'
 
 export default function Home() {
+
+  useEffect(() => {
+    if (typeof document !== undefined) {
+      require("../../node_modules/@shared/ui-component/dist/ui.bundle.min")
+      console.log("document exist")
+    }
+    else {
+      console.log("document not exist")
+    }
+  }, [])
+
   return (
     <div className={styles.container}>
       <Head>
@@ -18,6 +30,11 @@ export default function Home() {
         </h1>
 
         <UIExample text="via @shared using resolver" />
+
+        <button type="button" className="btn btn-success">Primary</button>
+        {/* <Button>
+          Click me from shared package
+        </Button> */}
       </main>
     </div>
   )
