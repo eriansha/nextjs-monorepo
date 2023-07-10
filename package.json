@@ -6,6 +6,7 @@
   "scripts": {
     "dev:internal-dashboard": "npm run dev -w internal-dashboard",
     "dev:customer-web": "npm run dev -w customer-web",
+    "dev:xyz-web": "npm run start -w xyz-web",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint-packages": "npm run lint -ws --if-present"
   },
@@ -17,6 +18,7 @@
   "workspaces": [
     "internal-dashboard",
     "customer-web",
-    "shared/ui-component"
+    "shared/ui-component",
+    "xyz-web"
   ]
 }
