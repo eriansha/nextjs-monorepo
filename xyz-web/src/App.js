@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from '@shared/ui-component';
 
 function App() {
   return (
@@ -9,14 +10,9 @@ function App() {
         <p>
           Welcome to xyz web.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Click here
-        </a>
+        <Button>
+          Click here from shared component
+        </Button>
       </header>
     </div>
   );
