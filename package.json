@@ -4,6 +4,7 @@
   "description": "Experimenting repo to create Monorepo for NextJS projects",
   "main": "index.js",
   "scripts": {
+    "build-shared": "npm run build -w @shared/ui-component",
     "dev:internal-dashboard": "npm run dev -w internal-dashboard",
     "dev:customer-web": "npm run dev -w customer-web",
     "dev:xyz-web": "npm run start -w xyz-web",
