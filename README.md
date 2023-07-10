@@ -40,12 +40,14 @@ The project structure is organized as follows:
 ## Available Scripts
 In the root project directory, you can run the following scripts:
 
+- **npm run build-css**: Compile sass into css from @shared/ui-component
 - **npm run dev:internal-dashboard**: Starts the development server for internal-dashboard project.
 - **npm run dev:customer-web**: Starts the development server for customer-web project.
 - **npm run lint-packages**: Run linting all packages.
 
 ## Deployment
 ```bash
+npm run build-css
 npm run build -w <pkg>
-# npm run build -w customer-web
+# example: npm run build -w customer-web
 ```
