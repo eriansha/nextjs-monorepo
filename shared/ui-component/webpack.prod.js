@@ -1,5 +1,7 @@
 const path = require("path");
 const autoprefixer = require('autoprefixer')
+// const webpack = require('webpack');
+// const nodeExternals = require('webpack-node-externals');
 
 module.exports = function(_env, argv) {
   const isProduction = argv.node === "production";
@@ -11,6 +13,9 @@ module.exports = function(_env, argv) {
     entry: {
       index: { import: "./src/index.js" }
     },
+    // target: 'node',
+    // externalsPresets: { node: true }, // in order to ignore built-in modules like path, fs, etc.
+    // externals: [nodeExternals()], // in order to ignore all modules in node_modules folder,
     module: {
       rules: [
         {
@@ -52,7 +57,7 @@ module.exports = function(_env, argv) {
       ],
     },
     resolve: {
-      extensions: [".js", ".jsx", ".ts", ".tsx"]
+      extensions: [".js", ".jsx", ".ts", ".tsx"],
     },
     // optimization: {
     //   splitChunks: {
@@ -63,6 +68,12 @@ module.exports = function(_env, argv) {
       react: 'react',
       'react-dom': 'react-dom',
     },
+    // plugins: [
+    //   // Ignore the document object on the server-side
+    //   new webpack.DefinePlugin({
+    //     'typeof document': JSON.stringify('undefined'),
+    //   }),
+    // ],
     output: {
       globalObject: 'this',
       filename: "ui.bundle.min.js",
