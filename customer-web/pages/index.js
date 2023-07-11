@@ -1,20 +1,8 @@
 import Head from 'next/head'
-import { useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 import { UIExample } from '@shared/ui-component'
 
 export default function Home() {
-
-  useEffect(() => {
-    if (typeof document !== undefined) {
-      require("../../node_modules/@shared/ui-component/dist/ui.bundle.min")
-      console.log("document exist")
-    }
-    else {
-      console.log("document not exist")
-    }
-  }, [])
-
   return (
     <div className={styles.container}>
       <Head>
