@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { Button } from '@shared/ui-component';
+import { UIExample, Button } from '@shared/ui-component';
+
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
         <p>
           Welcome to xyz web.
         </p>
-        <Button>
+
+        <UIExample />
+        <Button color="primary">
           Click here from shared component
         </Button>
       </header>

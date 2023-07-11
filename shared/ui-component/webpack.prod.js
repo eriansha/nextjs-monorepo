@@ -60,7 +60,8 @@ module.exports = function(_env, argv) {
     //   },
     // },
     externals: {
-      document: 'document',
+      react: 'react',
+      'react-dom': 'react-dom',
     },
     output: {
       globalObject: 'this',
@@ -70,8 +71,6 @@ module.exports = function(_env, argv) {
       // Below two important lines!
       library: 'sharedUIComponent',
       libraryTarget: 'umd',
-      // publicPath: '/static/', // adjust the public path as needed
-      // chunkFilename: '[name].js',
     },
   };
 }
